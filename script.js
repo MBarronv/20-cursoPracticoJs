@@ -4,6 +4,9 @@ const input2 = document.querySelector('#cal2');
 const btn = document.querySelector('#calcular');
 const result = document.querySelector('#result');
 
+// se crea un evento de escucha con el atributo click, y el comando a ejecutar
+// cabe mencionar que el comando siendo un metodo no se llama como tal 
+btn.addEventListener( 'click', btnClick );
 
 function btnClick(){
     console.log('escuchando click');
