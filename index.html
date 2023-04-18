@@ -8,13 +8,23 @@
 </head>
 <body>
     <h1 class="blue" style="color: blue;">Manipulacion del DOM basica Curso Práctico de JavaScript</h1>
-    <h2>Clase 14 addEventListener : una manera de separar lenguajes de programacion de html y js</h2>
-    
-    <input id="cal1" type="text" placeholder="Escribe algo numero">
-    <input id="cal2" type="text" placeholder="Escribe algo numero">
-    <button id="calcular" >Calcular</button>
-    <p id="result"></p>
+    <h2>Clase 14 addEventListener : una manera de separar lenguajes de programacion de html y js
+        En este ejemplo se utiliza un formulario y el event.prevetDefault() para evitar el recargar la pagina
 
+    </h2>
+
+    <!-- 
+        Cuando usamos el tar de from por deafault va a hacer un subbmit,
+        Para evitar la accion por default del submit se agrega event.preventDefault() en js
+    -->
+    <form action="" class="form" id="form">
+
+        <input id="cal1" type="text" placeholder="Escribe algo numero">
+        <input id="cal2" type="text" placeholder="Escribe algo numero">
+        <button id="calcular" >Calcular</button>
+        <p id="result"></p>
+    </form>
+    
     <script src="./script.js"> </script>
 </body>
 </html>
